@@ -1,0 +1,30 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "931acfef7d0111c6338b85d8b94714d0"
+name = "test-shop"
+handle = "test-shop-122"
+application_url = "https://venue-finally-implemented-meaningful.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "test2343415125.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+use_legacy_install_flow = true
+
+[auth]
+redirect_urls = [
+  "https://venue-finally-implemented-meaningful.trycloudflare.com/auth/callback",
+  "https://venue-finally-implemented-meaningful.trycloudflare.com/auth/shopify/callback",
+  "https://venue-finally-implemented-meaningful.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
